@@ -17,7 +17,30 @@ public class HospitalPatientRecord {
             System.out.println("4. Delete Patient Record");
             System.out.println("5. Exit");
             System.out.print("Select an option: ");
-        
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    createPatientRecord();
+                    break;
+                case 2:
+                    readPatientRecords();
+                    break;
+                case 3:
+                    updatePatientRecord();
+                    break;
+                case 4:
+                    deletePatientRecord();
+                    break;
+                case 5:
+                    exit = true;
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
+    }
+
     public static void createPatientRecord() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter patient name: ");
@@ -47,7 +70,6 @@ public class HospitalPatientRecord {
             System.out.println("Invalid index.");
         }
     }
-
     public static void deletePatientRecord() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the index of the record to delete: ");
