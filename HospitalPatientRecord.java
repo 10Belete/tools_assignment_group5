@@ -70,7 +70,6 @@ public class HospitalPatientRecord {
             System.out.println("Invalid index.");
         }
     }
-
     public static void deletePatientRecord() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the index of the record to delete: ");
