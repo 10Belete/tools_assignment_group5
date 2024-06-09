@@ -13,6 +13,9 @@ public class DecimalNumberReversal {
         scanner.close();
     }
 
+
+    
+
     public static double reverseDecimalNumber(double number) {
         String numberStr = String.valueOf(number);
         int dotpos=numberStr.indexOf(".");
